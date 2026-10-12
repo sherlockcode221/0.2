@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>بطاقات ربع لا خير (2) للمتقدمات</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f6efe9;--card:#fff;--ink:#3a2a31;--rose:#b5718a;--gold:#c9a45c;--ok:#2e7d5b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#241b20;--card:#33262d;--ink:#f3e8ec;--rose:#e0a0b8;--gold:#d8b46c;--ok:#6fd3a3}}
+:root[data-theme="dark"]{--bg:#241b20;--card:#33262d;--ink:#f3e8ec;--rose:#e0a0b8;--gold:#d8b46c;--ok:#6fd3a3}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Amiri","Noto Naskh Arabic","Traditional Arabic",serif;padding:14px}
+h1{font-size:20px;text-align:center;color:var(--rose);margin:6px 0}
+button{display:block;margin:8px auto 16px;padding:8px 18px;border:1px solid var(--rose);background:none;color:var(--rose);border-radius:20px;font:inherit;font-size:16px}
+.c{max-width:480px;margin:0 auto 18px;background:var(--card);border:2px solid var(--gold);border-radius:16px;padding:18px}
+.t{font-size:14px;color:var(--rose);margin-bottom:6px}
+.q{font-size:21px;line-height:1.8;font-weight:bold;margin-bottom:12px}
+.o{border:1px solid var(--gold);border-radius:10px;padding:8px 12px;margin:7px 0;font-size:20px;line-height:1.8}
+.o{cursor:pointer}
+.show .o.a,.o.r{border-color:var(--ok);color:var(--ok);background:rgba(46,125,91,.12)}
+.o.w{border-color:#c0392b;color:#c0392b;background:rgba(192,57,43,.1)}
+.n{text-align:center;font-size:14px;margin-top:8px;min-height:20px}
+.f{margin-top:12px;text-align:center;font-size:14px;color:var(--rose)}
+.o b{color:var(--rose);margin-left:6px}
+</style></head><body>
+<h1>سورة النساء — ربع لا خير (2) — للمتقدمات</h1>
+<button onclick="document.body.classList.toggle('show')">إظهار / إخفاء كل الإجابات</button>
+<div id="l"></div>
+<script>
+const D=[
+["الفعل «رغب» يتعدى بـ«في» و«عن». فما أثر الحرف على معنى ﴿وَتَرْغَبُونَ أَنْ تَنْكِحُوهُنَّ﴾؟",["«في» تفيد أنه لا يريدها، و«عن» تفيد أنه يريدها","«في» تفيد أنه يحبها ويريدها، و«عن» تفيد أنه لا يريدها، والآية تحتمل المعنيين","لا فرق بين الحرفين في المعنى","«في» و«عن» كلاهما بمعنى الكراهة"],1],
+["لماذا جُعل لنشوز الزوجة عقوبة (﴿فَعِظُوهُنَّ وَاهْجُرُوهُنَّ﴾) ولنشوز الزوج ترضية (﴿فَلَا جُنَاحَ عَلَيْهِمَا أَن يُصْلِحَا﴾)؟",["لأن الله يحب الرجال أكثر","لأن الرجل قوّام على المرأة ورئيسها، ولا يعاقب المرؤوس رئيسه وإلا ضاعت القوامة، ونشوزه علامة كراهة وإرادة فرقة وقد جعل الله الفرقة بيده","لأن المرأة لا تنشز أبدًا","لأن الرجل لا يخطئ"],1],
+["ما الفرق بين ﴿نُشُوزًا﴾ و﴿إِعْرَاضًا﴾ في قوله: ﴿أَوْ إِعْرَاضًا﴾؟",["لا فرق بينهما","الإعراض أخف من النشوز","النشوز أن يتعالى عليها وهو يخاطبها، والإعراض أشد: أن يعرض عنها تمامًا فلا يخاطبها","النشوز خاص بالمرأة والإعراض خاص بالرجل"],2],
+["ما دلالة تنكير ﴿صُلْحًا﴾ وتأكيده بقوله ﴿وَالصُّلْحُ خَيْرٌ﴾؟",["أن يكون الصلح شكليًا أمام الناس","أن يكون صلحًا حقيقيًا تتألف فيه القلوب وتصفو النفوس، لا شكليًا","أن يتم بحكم القاضي","أن يكون بمقابل مالي فقط"],1],
+["من أدلة ﴿وَالصُّلْحُ خَيْرٌ﴾ أن النبي ﷺ أمسك سودة بنت زمعة لما تركت يومها لعائشة. ما وجه الاستدلال؟",["جواز ترك الزوجة بعض حقها ليبقى الزوج وهو خير من المفارقة بالكلية","وجوب أن يطلق الرجل زوجته إذا كبرت","أن القسم بين الزوجات غير واجب","أن الصلح خاص بزوجات النبي ﷺ"],0],
+["ما قول ابن جرير في المراد بـ﴿وَأُحْضِرَتِ الْأَنفُسُ الشُّحَّ﴾؟",["أنفس الرجال خاصة","أنفس النساء خاصة، شحّ المرأة بنصيبها من أيامها ونفقتها","أنفس اليتامى","الناس جميعًا دون تخصيص"],1],
+["قال النبي ﷺ: «اللهم هذا قسمي فيما أملك فلا تلمني فيما تملك ولا أملك». فما المقصود بـ«ما تملك ولا أملك»؟",["النفقة","المبيت","الميل القلبي والمحبة","الكسوة"],2],
+["ما وجه التشبيه في ﴿فَتَذَرُوهَا كَالْمُعَلَّقَةِ﴾، وأي شاهد يوافقه من حديث أم زرع؟",["كالمطلقة، والشاهد «إن أنطق أطلق»","لا ذات زوج ولا مطلقة، والشاهد «إن أنطق أطلق وإن أسكت أعلق»","كالأرملة، والشاهد «زوجي كالليل»","كالمسافرة، والشاهد «زوجي عياياء»"],1],
+["ادّعى بعضهم أن التعدد حرام جمعًا بين ﴿فَإِنْ خِفْتُمْ أَلَّا تَعْدِلُوا﴾ و﴿وَلَن تَسْتَطِيعُوا أَن تَعْدِلُوا﴾. فما الرد؟",["الآية الثانية نسخت الأولى","العدل المنفي هو الميل القلبي والمحبة وهو خارج عن الإرادة، والمطلوب العدل فيما يُقدر عليه من النفقة والمبيت والكسوة والسكن","لا يمكن الرد عليهم","العدل المنفي هو العدل في النفقة"],1],
+["قال تعالى: ﴿وَإِن تَكْفُرُوا فَإِنَّ لِلَّهِ مَا فِي السَّمَاوَاتِ وَمَا فِي الْأَرْضِ﴾. ما تقدير جواب الشرط المحذوف؟",["فلا تلومونا","فسيعاقبكم الله في الدنيا فقط","فلن يضره كفركم، فهو غني عنكم ووصيتكم بالتقوى رحمة بكم لا لحاجة إليكم","فستهلكون جميعًا"],2]];
+const L="أبجد";
+document.getElementById("l").innerHTML=D.map((d,i)=>`<div class="c"><div class="t">تدبر النساء • سؤال ${i+1} من ${D.length}</div><div class="q">${d[0]}</div>${d[1].map((o,j)=>`<div class="o${j==d[2]?" a":""}"><b>${L[j]})</b>${o}</div>`).join("")}<div class="n"></div><div class="f">معلمة منال ناجى • أكاديمية الحصون</div></div>`).join("");
+document.querySelectorAll(".c").forEach(c=>c.querySelectorAll(".o").forEach(o=>o.onclick=()=>{
+if(c.dataset.d)return;c.dataset.d=1;const ok=o.classList.contains("a");
+o.classList.add(ok?"r":"w");c.querySelector(".n").textContent=ok?"أحسنتِ، إجابة صحيحة ✅":"إجابة غير صحيحة، الصحيحة بالأخضر";
+if(!ok)c.querySelector(".a").classList.add("r");}));
+</script></body></html>
